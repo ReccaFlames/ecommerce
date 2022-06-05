@@ -10,4 +10,5 @@
 		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.9.xsd">
 	
 	<include file="db/changelog/product/cahnge_schema_20220605_create_product_table.xml" relativeToChangelogFile="false" />
+	<include file="db/changelog/product/chagne_schema_20220605_populate_data.xml" relativeToChangelogFile="false" />
 </databaseChangeLog>

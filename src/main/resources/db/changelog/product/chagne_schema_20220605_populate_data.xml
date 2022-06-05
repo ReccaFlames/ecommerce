@@ -1,0 +1,23 @@
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd
+		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.9.xsd">
+	<changeSet id="202206051637" author="Pawel Jozwik">
+		
+		<insert tableName="product">  
+            <column name="id" value="8b50ba9b8f5b4062a5d2c5eb3a2e51fd" />
+			<column name="name" value="Element Skateboard Deck 8.25" />
+			<column name="short_description" value="Element Skateboard Deck 8.25 made from maple without griptape." />
+			<column name="image_url" value="https://kitedanmark.b-cdn.net/media/catalog/product/cache/12/image/500x500/e4d92e6aceaad517e7b5c12e0dc06587/a/l/alyxd00211_1_.png" />
+			<column name="created_at" value="2022-06-05 15:58:08.459252" />
+			<column name="created_by" value="eacb257a92c3443cbadcdb9f3eb0da8f" />
+			<column name="modified_at" value="2022-06-05 15:58:08.459252" />
+			<column name="modified_by" value="eacb257a92c3443cbadcdb9f3eb0da8f" />
+        </insert> 
+	</changeSet>
+</databaseChangeLog>
