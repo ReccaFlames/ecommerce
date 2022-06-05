@@ -8,23 +8,6 @@
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd
 		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
 		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.9.xsd">
-	<changeSet id="202206012358" author="Pawel Jozwik">
-		<preConditions onFail="MARK_RAN">
-			<not>
-				<tableExists tableName="Table_name"/>
-			</not>
-		</preConditions>
-		<createTable tableName="product">
-			<column name="id" type="UUID">
-				<constraints primaryKey="true" primaryKeyName="product_id_pk" />
-			</column>
-			<column name="name" type="varchar(250)"></column>
-			<column name="short_description" type="varchar(250)"></column>
-			<column name="image_url" type="varchar(250)"></column>
-			<column name="created_at" type="TIMESTAMP WITH TIME ZONE"></column>
-			<column name="created_by" type="UUID"></column>
-			<column name="modified_at" type="TIMESTAMP WITH TIME ZONE"></column>
-			<column name="modified_by" type="UUID"></column>
-		</createTable>
-	</changeSet>
+	
+	<include file="db/changelog/product/cahnge_schema_20220605_create_product_table.xml" relativeToChangelogFile="false" />
 </databaseChangeLog>
