@@ -3,6 +3,8 @@ package com.recca.ecommerce.product;
 import java.util.List;
 import java.util.UUID;
 
+import javax.annotation.security.RolesAllowed;
+
 import com.recca.ecommerce.product.dto.ProductDto;
 import com.recca.ecommerce.product.service.ProductService;
 
@@ -20,6 +22,7 @@ import lombok.AllArgsConstructor;
 
 @RestController
 @AllArgsConstructor
+@RolesAllowed("member")
 @RequestMapping("/products")
 public class ProductController {
 
